@@ -1,10 +1,18 @@
+# General info
+
+ - [What's new in Python 3](https://docs.python.org/3/whatsnew/3.0.html)
+ - [Automated Python 2 to 3 code translation](https://docs.python.org/2/library/2to3.html)
+
 # `print` is a function, not a statement
 
-| Python2 | Python3 |
-| ------- | ------  |
-|  `print "Hello"` | `print("Hello")` |
-|  `print "Hello",` | `print("Hello", end="")` |
+```
+| Python2                        | Python3                           |
+| -------------------------      | ------------------                |
+|  `print "Hello"`               | `print("Hello")`                  |
+|  `print "Hello",`              | `print("Hello", end="")`          |
 |  `print >>sys.stderr, "Hello"` | `print("Hello", file=sys.stderr)` |
+```
+
 
 # `bytes` vs `string`
 
